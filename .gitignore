@@ -1,2 +1,4 @@
 # exclude answers folder
 answers
+*.*~
+
