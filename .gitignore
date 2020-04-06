@@ -1,6 +1,7 @@
 # exclude answers folder
 homework_key/
 answers/
+quiz/files/
 ~$Nacht*
 *.*~
 .*~
