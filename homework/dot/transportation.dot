@@ -1,0 +1,26 @@
+#14S Exam4 a
+#
+digraph Transportation_Network {
+rankdir=LR;
+node [shape=box, color=lightgrey, filled=true]
+f1 [label="Factory 1\nproduce 300"] 
+f2 [label="Factory 2\nproduce 250"]
+
+w1 [label="Warehouse 1"]
+w2 [label="Warehouse 2"]
+
+r1 [label="Retail 1\nneed 200"] 
+r2 [label="Retail 2\nneed 200"]
+r3 [label="Retail 3\nneed 150"]
+f1 -> w1 [label="$20\n200 max", decorate=true]
+f1 -> w2 [label="$25\n150 max", decorate=true]
+
+f2 -> w2 [label="$15\n250 max", decorate=true]
+f2 -> r3 [label="$10\n250 max", decorate=true]
+
+w1 -> r1 [label="$30\n200 max", decorate=true]
+w1 -> r2 [label="$10\n200 max", decorate=true]
+
+w2 -> r2 [label="$20\n200 max", decorate=true]
+w2 -> r3 [label="$18\n190 max", decorate=true]
+}

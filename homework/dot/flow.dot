@@ -1,0 +1,26 @@
+#14S Exam4 a
+#
+digraph Flow {
+rankdir=LR;
+node [shape=circle, color=lightgrey, filled=true]
+
+start -> b [label="[20]", decorate=true];
+start -> c [label="[15]", decorate=true];
+start -> d [label="[12]", decorate=true];
+
+b -> e [label="[18]", decorate=true];
+b -> c [label="[9]", decorate=true];
+c -> f [label="[21]", decorate=true];
+c -> g [label="[22]", decorate=true];
+
+d -> g [label="[17]", decorate=true];
+
+e -> f [label="[17]", decorate=true];
+e -> end [label="[15]", decorate=true];
+
+f -> end [label="[15]", decorate=true];
+
+f -> g [label="[14]", decorate=true, dir=both];
+
+g -> end [label="[21]", decorate=true];
+}

@@ -1,0 +1,21 @@
+# Quiz_Networks_02_graph_B.dot
+#
+digraph Flow {
+
+rankdir=LR;
+NewYork [label="New York\nhas 1000"];
+Seattle [label="Seattle\nwants 600"];
+
+Miami [label="Miami\nhas 700"];
+Fresno [label="Fresno\nwants 1100"];
+
+NewYork -> Seattle [label="$21"];
+NewYork -> Abilene [label="$8"];
+
+Abilene -> Seattle [label="$11"];
+Abilene -> Fresno [label="$11"];
+
+Miami -> Abilene  [label="$7"];
+Miami -> Fresno [label="$21"];
+
+}
