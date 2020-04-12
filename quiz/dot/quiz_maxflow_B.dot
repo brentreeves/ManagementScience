@@ -1,0 +1,34 @@
+# MGMT 345 quiz_maxflow_B
+#
+digraph Flow {
+rankdir=LR;
+node [shape=circle, color=lightgrey, filled=true]
+
+a-> b [label="[3]", decorate=true];
+a-> c [label="[4]", decorate=true];
+a-> d [label="[5]", decorate=true];
+a-> e [label="[6]", decorate=true];
+b-> f [label="[8]", decorate=true];
+c-> f [label="[7]", decorate=true];
+d-> f [label="[6]", decorate=true];
+e-> f [label="[5]", decorate=true];
+b-> g [label="[4]", decorate=true];
+c-> g [label="[3]", decorate=true];
+d-> g [label="[2]", decorate=true];
+e-> g [label="[1]", decorate=true];
+f-> h [label="[3]", decorate=true];
+f-> i [label="[2]", decorate=true];
+f-> j [label="[1]", decorate=true];
+g-> h [label="[1]", decorate=true];
+g-> i [label="[2]", decorate=true];
+g-> j [label="[3]", decorate=true];
+h-> k [label="[6]", decorate=true];
+i-> k [label="[5]", decorate=true];
+j-> k [label="[4]", decorate=true];
+h-> l [label="[4]", decorate=true];
+i-> l [label="[5]", decorate=true];
+j-> l [label="[6]", decorate=true];
+k-> m [label="[6]", decorate=true];
+l-> m [label="[8]", decorate=true];
+
+}

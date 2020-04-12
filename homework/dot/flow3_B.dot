@@ -1,0 +1,38 @@
+# MGMT 345 homework / quiz
+#
+digraph Flow {
+rankdir=LR;
+node [shape=circle, color=lightgrey, filled=true]
+
+a -> b [label="[3]", decorate=true];
+a -> c [label="[4]", decorate=true];
+a -> d [label="[5]", decorate=true];
+
+b -> e [label="[6]", decorate=true];
+b -> c [label="[3]", decorate=true, dir=both];
+
+c -> d [label="[4]", decorate=true, dir=both];
+c -> e [label="[2]", decorate=true];
+c -> f [label="[5]", decorate=true];
+
+d -> f [label="[8]", decorate=true];
+
+e -> f [label="[2]", decorate=true];
+e -> g [label="[5]", decorate=true];
+
+f -> g [label="[4]", decorate=true];
+f -> h [label="[5]", decorate=true];
+f -> i [label="[6]", decorate=true];
+
+g -> j [label="[7]", decorate=true];
+
+h -> j [label="[7]", decorate=true];
+h -> k [label="[5]", decorate=true];
+
+i -> k [label="[8]", decorate=true];
+
+k -> l [label="[9]", decorate=true];
+
+j -> l [label="[8]", decorate=true];
+
+}
