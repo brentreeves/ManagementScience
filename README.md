@@ -3,13 +3,13 @@ An introduction to Management Science, aka "Operations Research Lite"
 
 # Topics
 - Linear Models
--- Min, Max, Equals
--- "Make 2 widgets", Assignment, Scheduling, Flow, Shortest Path
+  - Min, Max, Equals
+  - "Make 2 widgets", Assignment, Scheduling, Flow, Shortest Path
 - Nonlinear Models
 - Decision Analysis
--- Bayes
+  - Bayes
 - Simulation Systems
--- Simul8
+  - Simul8
  
 # Requirements
 - Excel
